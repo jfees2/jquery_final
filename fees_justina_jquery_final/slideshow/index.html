@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Slick Smooth SlideShow</title>
+    <!----JQUERY---->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+        
+        h1 {
+            margin-left: 40px;
+        }
+        
+        .slider {
+            position: relative;
+            overflow: hidden;  
+            height: 600px;
+            width: 100%;
+            margin: 20px;
+            padding: 0;
+        }
+        
+        .slider ul {
+            position: absolute;
+            margin: 0;
+            top: 0;
+            height: 100%;
+            width: 500%
+        }
+        
+        .slider ul li {
+            position: absolute;
+            width: 20%;
+            top: 0;
+            bottom: 0;
+            margin: 0;
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0;
+        }
+        
+        .slider img {
+            border: none;
+            width: 90%;
+            min-height: 100%;
+            overflow: hidden;
+            padding-left: 35px;
+        }
+        
+        .bttn {
+            position: absolute;
+            display: block;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            top: 0;
+            bottom: 0;
+            width: 20%;
+            height: 600px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align:center;
+            opacity: 0;
+            z-index: 2;
+        }
+        
+        .prev {
+            left: 0;
+        }
+        
+        .next {
+            right: 0;
+        }
+        
+        .bttn:hover {
+            opacity: 1.0;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul li {
+            float: left;
+            margin: 10px;
+            padding: 5px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.08);
+            list-style-type: none;
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+    <h1>JQuery Final Part II</h1>
+    <div class="container">
+        <div class="slider">
+            <ul class="slideShow">
+                <li class="current"><img width="600" src="img/slideshow_img1.png" alt="image1"></li>
+                <li><img width="600" src="img/slideshow_img2.png" alt="image2"></li>
+                <li><img width="600" src="img/slideshow_img3.png" alt="image3"></li>
+                <li><img width="600" src="img/slideshow_img4.jpg" alt="image4"></li>
+                <li><img width="600" src="img/slideshow_img5.png" alt="image5"></li>
+            </ul>
+            
+            <button type="button" id="prev-bttn" class="bttn prev">&#10094;</button>
+            
+            <button type="button" id="next-bttn" class="bttn next">&#10095;</button>
+            
+   
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="current">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+            
+    
+    </div>
+		
+
+</body>
+</html>

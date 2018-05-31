@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Justina Fees</title>
+  <!----javascript---jquery---->
+  <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+  <!---css styles----->
+  <style>
+          body{
+            margin-top: 100px;
+            font-family: 'Trebuchet MS', serif;
+            line-height: 1.6
+        }
+        .container{
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        ul.tabs{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        ul.tabs li{
+            background: none;
+            color: #222;
+            display: inline-block;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        ul.tabs li.current{
+            background: #ededed;
+            color: blue;
+        }
+
+        .tab-content{
+            display: none;
+            background: #ededed;
+            padding: 15px;
+        }
+
+        .tab-content.current{
+            display: inherit;
+        }
+    </style>
+</head>
+<body>
+ <div class="container">
+     <h1>My Tabs</h1>
+        <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">Justina</li>
+            <li class="tab-link" data-tab="tab-2">Julia</li>
+            <li class="tab-link" data-tab="tab-3">David</li>
+            <li class="tab-link" data-tab="tab-4">Cynthia</li>
+        </ul>
+        <div id="tab-1" class="tab-content current">
+           Female <br>
+           Age 25 <br>
+           Manager
+        </div>
+        <div id="tab-2" class="tab-content">
+            Female <br>
+            Age 26 <br>
+            Developer
+        </div>
+        <div id="tab-3" class="tab-content">
+            Male <br>
+            Age 59 <br>
+            Contractor
+        </div>
+        <div id="tab-4" class="tab-content">
+          Female <br>
+          Age 58 <br>
+          Marine Clerk
+        </div>
+</div><!-- container -->
+</body>
+</html>

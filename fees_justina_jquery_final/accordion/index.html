@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Accordion</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+    <!-----CSS----->
+    <style>
+    /*----- Accordion -----*/
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        p {
+            background-color: #ADA886;
+            border-bottom: 1px solid #FFFFFF;
+            cursor: pointer;
+            padding: 10px;
+            color: #FFFFFF;
+            margin: 0;
+            letter-spacing: .08em;
+            font-size: 1.2em;
+        }
+
+        ul {
+            background-color: #EFEFEF;
+            display: none;
+            margin: 0;
+            list-style-type: none;
+        }
+        
+        ul li {
+            padding: 5px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+       <h1>My Accordion Menu</h1>
+        <div class="accordion">
+         <p>&#43;  <strong>Salads</strong></p>
+           <ul class="content">
+            <li>Califonia Cobb</li>
+            <li>BBQ Chicken</li>
+            <li>Greek</li>
+          </ul>
+        </div>
+        <div class="accordion">
+          <p>&#43;  <strong>Pizza</strong></p>
+          <ul class="content">
+            <li>Quartro Cheese</li>
+            <li>Veggie OverLoad</li>
+            <li>Meat Lovers</li>
+          </ul>
+        </div>
+        <div class="accordion">
+          <p>&#43;  <strong>Drinks</strong></p>
+          <ul class="content">
+            <li>Water</li>
+            <li>Beer</li>
+          </ul>
+        </div>
+
+   <!---
+    <div class="accordion">
+        <div class="accord-section">
+            <a class="accord-title active" href="#accordion1">Salads</a>
+            <div id="accord1" class="accord-section-content open">
+                <ul>
+                    <li>Foreget Me Not</li>
+                    <li>California Cobb</li>
+                    <li>BBQ</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="accord-section">
+            <a class="accord-title" href="#accordion2">Pizza</a>
+            <div id="accord2" class="accord-section-content">
+                <ul>
+                    <li>BBQ</li>
+                    <li>Veggie Overload</li>
+                    <li>MeatLovers</li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>------>
+	
+</body>
+</html>
